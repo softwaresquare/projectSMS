@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caspian App</title>
+    <meta name="description" content="None">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/adminDashboard.css">
+
+
+    <meta name="theme-color" content="#2F3BA2">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+            <div class="col-md-8 col-lg-6"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12 py-2 bg-dark">
+            <ul class="nav flex-column bg-dark">
+                <!-- <section class="bg-light">
+                    <! -- Page Content -->
+                    <!-- /.container -->
+                </section> -->
+                <div class="container">
+                    <img style="height: 90px; width: 90px;" src="student1.png" alt="" id="inlxb"
+                        class="rounded-circle float-left" />
+                    <p id="imp2m" class="text-light">Name</p>
+                    <p id="imp2m-2" class="text-light">Class</p>
+                    <p id="imp2m-3" class="text-light">Roll No.</p>
+                </div>
+                <li class="nav-item"><a href="adminDashboard.html"
+                        class="nav-link text-light active bg-success">Dashboard</a></li><a href=""
+                    class="nav-link text-light btn-dark">Routine</a><a href="#"
+                    class="nav-link text-light btn-dark">Assignments</a><a href="#"
+                    class="nav-link text-light btn-dark">Gallery</a>
+                <li class="nav-item"><a href="#" class="nav-link btn-dark">Inbox</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-light btn-dark"><span>News Board</span></a><a
+                        href="#" class="nav-link text-light btn-dark">Upcoming Events</a><a href="#"
+                        class="nav-link text-light btn-dark">Teacher/Staffs</a><a href="#"
+                        class="nav-link text-light btn-dark">Attendence</a><a href="#"
+                        class="nav-link text-light btn-dark">Classes</a><a href="#"
+                        class="nav-link text-light btn-dark">Leave Notice</a><a href="#"
+                        class="nav-link text-light btn-dark">Fee</a><a href="#"
+                        class="nav-link text-light btn-dark">Assignments</a></li>
+                <li class="nav-item dropdown"><a data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false" class="nav-link dropdown-toggle text-light btn-dark border-0">About</a>
+                    <div class="dropdown-menu"><a href="generalAdminSetting.html" class="dropdown-item">Profile</a><a
+                            href="#" class="dropdown-item">Contact</a><a href="#" class="dropdown-item">Change
+                            Password</a>
+                        <div class="dropdown-divider">
+                        </div><a href="#" class="dropdown-item">Log Out</a>
+                    </div>
+                </li>
+                <li class="nav-item"></li>
+            </ul>
+        </div>
+    </div>
+    <!--Bootstrap Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+                .then(function () {
+                    console.log('Service Worker Registered');
+                });
+        }
+    </script>
+    <script src="../public/signin.js"></script>
+</body>
+
+</html>
