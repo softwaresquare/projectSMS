@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="/path/to/nepali-date-picker.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nepali-date-picker.css" />
+    
+</head>
+
+<body>
+    <input type="text" class="date-picker" placeholder="Select Date(s)">
+
+
+    <input type="text" class="date-picker" data-single="true" placeholder="Select Date(s)">
+    <input type="text" class="date-picker" value="2075-5-12" name="date1" />
+<input type="text" class="date-picker" value="2076-12-11,2076-12-12,2076-12-13" name="date2" />
+</body>
+
+<script>
+    $(function () {
+        $('.date-picker').nepaliDatePicker();
+    });
+</script>
+
+</html>

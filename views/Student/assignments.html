@@ -45,6 +45,9 @@
                 </li>
                 <a href="routine.html" class="nav-link text-light btn-dark"><i class="far fa-list"></i>&nbsp;
                     Routine</a>
+                <a href="onlineclass.html" class="nav-link text-light btn-dark"><i class="far fa-video"
+                        style="font-size: 115%"></i>&nbsp;
+                    Online Class</a>
                 <a href="assignments.html" class="nav-link text-light btn-success"><i class="far fa-book"
                         style="font-size: 130%;"></i>&nbsp; Assignments</a>
                 <a href="attendance.html" class="nav-link text-light btn-dark"><i class="far fa-calendar-alt"
@@ -64,6 +67,8 @@
                             class="far fa-money-check-edit-alt"></i>&nbsp; Fee</a>
                     <a href="studymaterial.html" class="nav-link text-light btn-dark"><i class="far fa-books"
                             style="font-size: 120%;"></i>&nbsp; Study Material</a>
+                    <a href="result.html" class="nav-link text-light btn-dark"><i class="far fa-file-spreadsheet"
+                            style="font-size: 135%;"></i>&nbsp; Result</a>
                 <li class="nav-item dropdown"><a data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                         aria-expanded="false" class="nav-link dropdown-toggle text-light btn-dark border-0"><i
                             class="far fa-sliders-v-square" style="font-size: 125%;"></i>&nbsp; About</a>
@@ -85,7 +90,7 @@
                 <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12 py-3">
 
                     <h4 id="i54x4f" style="font-size:  2.5em;">
-                       Assignments
+                        Assignments
                     </h4>
                 </div>
                 <div class=" p-4" style="margin-right: -4%;"> <button type="button"
@@ -144,6 +149,7 @@
                             <th>Subject</th>
                             <th>Description</th>
                             <th>Operations</th>
+                            <th>Checked Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -154,15 +160,17 @@
                             <td>03/17</td>
                             <td>Chemistry</td>
                             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.</td>
-                            <td >
+                            <td>
                                 <button type="button" class="btn btn-outline-dark btn-sm btn-block mr-2">
                                     <i class="fas fa-download"></i> &nbsp;File
                                 </button>
                                 &nbsp;
-                                <button type="Submit" class="btn btn-outline-dark btn-sm btn-block mr-2" style="margin-top: 1%;">
+                                <button type="Submit" class="btn btn-outline-dark btn-sm btn-block mr-2"
+                                    style="margin-top: 1%;">
                                     <i class="fas fa-paper-plane"></i> &nbsp;Submit
                                 </button>
                             </td>
+                            <td class="bg-danger text-white d-flex align-self-center p-5"> Not Checked </td>
                         </tr>
                         <tr>
                             <th>1</th>
@@ -171,15 +179,17 @@
                             <td>03/15</td>
                             <td>Physics</td>
                             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet.</td>
-                            <td >
+                            <td>
                                 <button type="button" class="btn btn-outline-dark btn-sm btn-block mr-2">
                                     <i class="fas fa-download"></i> &nbsp;File
                                 </button>
                                 &nbsp;
-                                <button type="Submit" class="btn btn-outline-dark btn-sm btn-block mr-2" style="margin-top: 1%;">
+                                <button type="Submit" class="btn btn-outline-dark btn-sm btn-block mr-2"
+                                    style="margin-top: 1%;">
                                     <i class="fas fa-paper-plane"></i> &nbsp;Submit
                                 </button>
                             </td>
+                            <td class="bg-success text-white d-flex align-self-center p-5"> Checked </td>
                         </tr>
                     </tbody>
                 </table>

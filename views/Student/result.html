@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Routine</title>
+    <title>Result</title>
     <meta name="description" content="None">
     <meta name="author" content="">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -43,7 +43,7 @@
                 <li class="nav-item"><a href="dashboard.html" class="nav-link text-light bg-dark"><i class="far fa-home"
                             style="font-size: 110%;"></i>&nbsp; Dashboard</a>
                 </li>
-                <a href="routine.html" class="nav-link text-light btn-success"><i class="far fa-list"></i>&nbsp;
+                <a href="routine.html" class="nav-link text-light btn-dark"><i class="far fa-list"></i>&nbsp;
                     Routine</a>
                     <a href="onlineclass.html" class="nav-link text-light btn-dark"><i class="far fa-video" style="font-size: 115%"></i>&nbsp;
                         Online Class</a>
@@ -66,7 +66,7 @@
                             class="far fa-money-check-edit-alt"></i>&nbsp; Fee</a>
                     <a href="studymaterial.html" class="nav-link text-light btn-dark"><i class="far fa-books"
                             style="font-size: 120%;"></i>&nbsp; Study Material</a>
-                            <a href="result.html" class="nav-link text-light btn-dark"><i class="far fa-file-spreadsheet" style="font-size: 135%;"></i>&nbsp; Result</a>
+                    <a href="result.html" class="nav-link text-light btn-success"><i class="far fa-file-spreadsheet" style="font-size: 135%;"></i>&nbsp; Result</a>
                 <li class="nav-item dropdown"><a data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                         aria-expanded="false" class="nav-link dropdown-toggle text-light btn-dark border-0"><i
                             class="far fa-sliders-v-square" style="font-size: 125%;"></i>&nbsp; About</a>
@@ -84,72 +84,67 @@
             </ul>
         </div>
         <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
-            <div class="row bg-primary text-white" style="margin-right: -4%;">
-                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12 py-3">
-
+            <div class="row bg-primary text-white" >
+                <div class="col-xl-4 col-lg-4 col-md- py-3">
+                    <img src="/public/logo.png" style="height: 80px;" alt="">
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 mt-4 py-1">
                     <h4 id="i54x4f" style="font-size:  2.5em;">
-                        Routine
+                        Result
                     </h4>
                 </div>
-                <div class=" p-4" style="margin-right: -4%;"> <button type="button"
+                <div class=" p-4 mt-3 ml-5" style="margin-right: -4%;"> <button type="button"
                         class="btn btn-outline-light mr-3"><i class="far fa-bell"></i> &nbsp;Notifications</button>
                 </div>
-                <div class=" p-4"> <button type="button" class="btn btn-outline-light mr-3"><i
+                <div class=" p-4 mt-3 " > <button type="button" class="btn btn-outline-light"><i
                             class="far fa-sign-out-alt"></i>&nbsp; Logout</button>
                 </div>
             </div>
-            <div class="card mt-2">
-                <div class="card-body">
-                    <p class="card-text mb-1">Published On - 04/04/2021 </p>
-                    <p class="card-text mb-1"><time draggable="true" data-highlightable="1" datetime="2018-06-21"
-                            id="i1lzko">Class - 11 Science </time></p><!-- Progress -->
-                    <div class="row ">
+            <div class="mt-2">
+                <div class="card-body ">
+                    <div class="form-group row align-items-center">
+                        <label class="col-3">Class*</label>
+                        <div class="col">
+                            <select required class="form-control">
+                                <option>First </option>
+                                <option>Second</option>
+                                <option>Third</option>
+                                <option>Final</option>
 
-                        <div class="col ml-n2">
-                            <!-- Title -->
-                            <!-- Text -->
-
-
-
-                            <div class="text-muted mr-2 " style="margin-left: 0.5%;">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit, sed
-                                do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.
-                            </div>
+                            </select>
                         </div>
-                        <button type="button" class="btn btn-outline-danger">
-                            <i class="fas fa-download"></i> Download
-                        </button>
-                        <div class="col-auto">
-                            <!-- Dropdown -->
-                            <div class="dropdown">
-                                <div class="dropdown-menu dropdown-menu-right"><a href="#!" class="dropdown-item">
-                                        Action
-                                    </a><a href="#!" class="dropdown-item"> Another action </a><a href="#!"
-                                        class="dropdown-item"> Something else here </a></div>
-                            </div>
+                    </div>
+
+
+
+                    <div class="col-auto">
+                        <div class="row justify-content-center mt-4">
+                            <button type="submit" class="btn btn-primary mr-5">
+                                <b id="inob58">Download</b></button>
                         </div>
-                    </div> <!-- / .row -->
-                </div> <!-- / .card-body -->
-            </div>
-            <div class="container mt-2 mb-2"></div>
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous">
-            </script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                crossorigin="anonymous">
-            </script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-                crossorigin="anonymous">
-            </script>
-            <script src="assets/js/app.js"></script>
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                            <div class="dropdown-menu dropdown-menu-right"><a href="#!" class="dropdown-item">
+                                    Action
+                                </a><a href="#!" class="dropdown-item"> Another action </a><a href="#!"
+                                    class="dropdown-item"> Something else here </a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- / .card-body -->
         </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+        <script src="assets/js/app.js"></script>
     </div>
 </body>
 

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Online Class</title>
     <meta name="description" content="None">
     <meta name="author" content="">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -17,7 +17,7 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -59,8 +59,8 @@
                     Routine</a>
                 <a href="teachassignments.html" class="nav-link text-light btn-dark"><i class="far fa-book"
                         style="font-size: 130%;"></i>&nbsp; Assignments</a>
-                        <a href="teachsubassign.html" class="nav-link text-light btn-dark"><i class="far fa-book"
-                            style="font-size: 130%;"></i>&nbsp; Submitted Assignments</a>
+                <a href="teachsubassign.html" class="nav-link text-light btn-dark"><i class="far fa-book"
+                        style="font-size: 130%;"></i>&nbsp; Submitted Assignments</a>
                 <a href="teachattendance.html" class="nav-link text-light btn-dark"><i class="far fa-calendar-alt"
                         style="font-size: 125%;"></i>&nbsp; Attendance</a>
                 <a href="teachgallery.html" class="nav-link text-light btn-dark"><i class="fas fa-images"
@@ -75,13 +75,15 @@
                     </a><a href="teachstudent.html" class="nav-link text-light btn-dark"><i
                             class="far fa-users-class"></i>&nbsp;
                         Students</a>
-                        <a href="teachclasses.html" class="nav-link text-light btn-dark"><i
+                    <a href="teachclasses.html" class="nav-link text-light btn-dark"><i
                             class="far fa-chalkboard"></i>&nbsp;
-                            Classes</a>
-                    <a href="teachleaveNotice.html" class="nav-link text-light btn-success"><i
-                            class="far fa-user-injured" style="font-size: 120%;"></i>&nbsp; Leave Notice</a>
+                        Classes</a>
+                    <a href="teachleaveNotice.html" class="nav-link text-light btn-dark"><i class="far fa-user-injured"
+                            style="font-size: 120%;"></i>&nbsp; Leave Notice</a>
                     <a href="teachstudymaterial.html" class="nav-link text-light btn-dark"><i class="far fa-books"
                             style="font-size: 120%;"></i>&nbsp; Study Material</a>
+                    <a href="teachonlineclass.html" class="nav-link text-light btn-success"><i class="far fa-video"
+                            style="font-size: 115%;"></i>&nbsp; Online Class</a>
                 <li class="nav-item dropdown"><a data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                         aria-expanded="false" class="nav-link dropdown-toggle text-light btn-dark border-0"><i
                             class="far fa-sliders-v-square" style="font-size: 125%;"></i>&nbsp; About</a>
@@ -104,7 +106,7 @@
                 <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12 py-3">
 
                     <h4 id="i54x4f" style="font-size:  2.5em;">
-                        Leave Notice
+                        Online Class
                     </h4>
                 </div>
                 <div class=" p-4" style="margin-right: -4%;"> <button type="button"
@@ -115,25 +117,103 @@
                 </div>
             </div>
 
-            <div class=" py-5">
-                <div class="card">
-                    <div class="card-body">
-                        <form action="#" name="contact" method="POST" data-netlify="true" id="ieklo">
-                            <div class="form-group"><label for="exampleInputEmail" id="i3yhi">Teacher ID*</label><input
-                                    type="email" placeholder="11SA16" required class="form-control" /></div><label
-                                for="exampleInputEmail" id="iz9do">Days of Absence* 
-                            </label><input type="date" required
-                                placeholder="7th April, 2021 - 9th April, 2021 " class="form-control" />
-                            <div class="form-group"><label for="exampleInputName" id="i20pq"><br />Your
-                                    Name*:</label><input type="text" placeholder="John Doe" required class="form-control" /></div>
-                            <div class="form-group"><label for="exampleInputMessage" id="ielwm">Reason for Leave*</label><input type="email" required placeholder="Your Message"
-                                    class="form-control" /></div>
-                            <button type="submit" class="btn btn-primary">Send Notice</button>
-                        </form>
+            <div class="border" style="padding: 1%;">
+                <div class="row border rounded" style="margin: 0.1%;">
+                    <div class="d-flex flex-row col-xl-4 col-lg-4 col-md-4 col-sm-12 align-content-end flex-wrap">
+                        <p class="p-2">Show</p>
+
+                        <div class="dropdown show">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                10
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">15</a>
+                                <a class="dropdown-item" href="#">20</a>
+                                <a class="dropdown-item" href="#">25</a>
+                            </div>
+                        </div>
+                        <p class="p-2">Records</p>
+                    </div>
+                    <div class="row col-xl-8 col-lg-8 col-md-8 sm-12">
+                        <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 py-3 text-right ">
+
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 py-3">
+                            <div class="input-group input-group-dark input-group-round">
+                                <div class="input-group-prepend"></div>
+                                <input type="search" placeholder="Search" aria-label="Search app"
+                                    class="form-control form-control-dark" /><span class="input-group-text"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z">
+                                        </path>
+                                    </svg></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                &nbsp;
+
+                <table class="table table-bordered">
+                    <tbody id="iwp4j8">
+                        <tr>
+                            <th scope="row">3/15</th>
+                            <td>11 Science</td>
+                            <td>9:00-9:45</td>
+                            <td>Rameshwor</td>
+                            <td><a href="" class="btn btn-outline-success">Join</a></td>
+                            <td class="bg-success text-white"><i class="far fa-dot-circle" style="font-size: 150%;"></i>&nbsp; Running</td>
+                            <td><span class="material-icons"> edit </span> <span class="material-icons"> delete
+                                </span> <span class="material-icons">
+                                    download
+                                </span></td>
+                        </tr>
+                        <tr id="i0vjfk">
+                            <th scope="row">3/15</th>
+                            <td>11 Science</td>
+                            <td>9:00-9:45</td>
+                            <td>Rameshwor</td>
+                            <td><a href="" class="btn btn-outline-success">Join</a></td>
+                            <td class="bg-danger text-white"><i class="far fa-video-slash" style="font-size: 120%;"></i>&nbsp;
+                                Ended</td>
+                            <td><span class="material-icons"> edit </span> <span class="material-icons"> delete
+                                </span> <span class="material-icons">
+                                    download
+                                </span></td>
+                        </tr>
+                    </tbody>
+                    <thead class="thead-dark">
+                        <tr id="iduxf">
+                            <th scope="col">Date</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Teacher</th>
+                            <th scope="col">Link</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Operation</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div class="d-flex justify-content-between">
+                    <p class="text-muted">Showing 1-10 out of 14 entries.</p>
+
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        
         </div>
         <!--Bootstrap Scripts-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

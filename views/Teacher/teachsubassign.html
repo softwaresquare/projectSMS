@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
+  <title>Submitted Assignments</title>
   <meta name="description" content="None">
   <meta name="author" content="">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -57,9 +57,9 @@
           Routine</a>
         <a href="teachassignments.html" class="nav-link text-light btn-dark"><i class="far fa-book"
             style="font-size: 130%;"></i>&nbsp; Assignments</a>
-        <a href="teachsubassign.html" class="nav-link text-light btn-dark"><i class="far fa-book"
+        <a href="teachsubassign.html" class="nav-link text-light btn-success"><i class="far fa-book"
             style="font-size: 130%;"></i>&nbsp; Submitted Assignments</a>
-        <a href="teachattendance.html" class="nav-link text-light btn-success"><i class="far fa-calendar-alt"
+        <a href="teachattendance.html" class="nav-link text-light btn-dark"><i class="far fa-calendar-alt"
             style="font-size: 125%;"></i>&nbsp; Attendance</a>
         <a href="teachgallery.html" class="nav-link text-light btn-dark"><i class="fas fa-images"
             style="font-size: 115%;"></i>&nbsp; Gallery</a>
@@ -99,7 +99,7 @@
         <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12 py-3">
 
           <h4 id="i54x4f" style="font-size:  2.5em;">
-            Attendance
+            Submitted Assignments
           </h4>
         </div>
         <div class=" p-4" style="margin-right: -4%;"> <button type="button" class="btn btn-outline-light mr-3"><i
@@ -112,32 +112,24 @@
 
       <form class="mt-3">
         <div class="form-group row align-items-center">
-          <label class="col-3">Class*</label>
+          <label class="col-3">Submitted by</label>
           <div class="col">
-            <select required class="form-control">
-              <option>11 Science</option>
-              <option>12 Science</option>
-              <option id="iap76a">11 Management</option>
-              <option>12 Management</option>
-              <option>11 Humanities</option>
-              <option>12 Humanities</option>
-              <option id="iqi76p">HM</option>
-            </select>
+            <input  class="form-control">
+            </input>
           </div>
         </div>
         <div class="form-group row align-items-center">
-          <label class="col-3">Section*</label>
+          <label class="col-3">Section</label>
           <div class="col">
-            <select required class="form-control">
-              <option>A</option>
-              <option>B</option>
-            </select>
+            <input class="form-control">
+             
+            </input>
           </div>
         </div>
         <div class="form-group row align-items-center">
-          <label class="col-3">Date*</label>
+          <label class="col-3">Submitted On</label>
           <div class="col">
-            <input type="date" required placeholder="Date" name="profile-location" class="form-control" />
+            <input type="text"  name="profile-location" class="form-control" />
           </div>
         </div>
         <div class="col"></div>
@@ -146,128 +138,32 @@
         </div>
         <div class="row justify-content-center mt-4">
           <button type="submit" class="btn mr-5 btn-success">
-            <b id="ikt3yn">Take Attendence</b></button><button type="submit" class="btn mr-5 btn-danger">
-            <b id="ihzk9f">See Attendence</b>
+            <b id="ikt3yn">Approve</b></button><button type="submit" class="btn mr-5 btn-danger">
+            <b id="ihzk9f">Send for Correction</b>
           </button>
         </div>
       </form>
-      <div class="container mt-2 mb-2"></div>
-      <h3 class="font-weight-light">
-        <div draggable="true"><br draggable="true" /></div>
-        Take Attendence : <span>(2021-04-21,</span> <span>11 </span><span>Science,</span> A)
-      </h3>
-
-      <table class="table table-bordered">
-        <thead class="thead-dark">
-          <tr id="id7scj">
-            <th scope="col" id="iydv26">Roll No.</th>
-            <th scope="col" id="ih9sp5">Student Name</th>
-            <th scope="col" id="idrppl">
-              Attendence
-              <div class="form-check">
-                <input type="checkbox" value="" id="defaultCheck1" class="form-check-input" /><label for="defaultCheck1"
-                  class="form-check-label">
-                  All Present
-                </label>
-              </div>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Ram Oli</td>
-            <td>
-              <div class="form-check">
-                <input type="checkbox" value="" id="defaultCheck1-2" class="form-check-input1" /> <label
-                  for="defaultCheck1" class="form-check-label">
-                  Present
-                </label>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Shyam Sharma</td>
-            <td>
-              <div class="form-check">
-                <input type="checkbox" value="" id="defaultCheck1-2-2" class="form-check-input1" /> <label
-                  for="defaultCheck1" class="form-check-label">
-                  Present
-                </label>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td id="i2sfzo">Gita Thapa</td>
-            <td id="ixl1mj-3">
-              <div class="form-check">
-                <input type="checkbox" value="" id="defaultCheck1-2-3" class="form-check-input1" /> <label
-                  for="defaultCheck1" class="form-check-label">
-                  Present
-                </label>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="row justify-content-center mt-4">
-        <button type="submit" class="btn mr-5 btn-success">
-          <b id="ikt3yn">Save Attendence</b>
-        </button>
-      </div>
-
-      <h3 class="font-weight-light">
-        <div draggable="true"><br draggable="true" /></div>
-        View Attendance (2021-04-12, 11 Science, A)
-      </h3>
-      <table class="table table-bordered">
-        <thead class="thead-dark">
-          <tr id="i4pjui">
-            <th scope="col" id="i2roh3">Roll No.</th>
-            <th scope="col" id="iya5ym">Student Name</th>
-            <th scope="col">Attendence</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td id="ido8bc">Ram Oli</td>
-            <td>Present</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Ram Khadka</td>
-            <td>Present</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Sita Sharma</td>
-            <td>Absent</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
-    <!--Bootstrap Scripts-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js')
-          .then(function () {
-            console.log('Service Worker Registered');
-          });
-      }
-    </script>
-    <script src="../public/signin.js"></script>
+  </div>
+  <!--Bootstrap Scripts-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js')
+        .then(function () {
+          console.log('Service Worker Registered');
+        });
+    }
+  </script>
+  <script src="../public/signin.js"></script>
   </div>
 </body>
 
